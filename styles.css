@@ -12,4 +12,123 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    
+}
+
+/*
+ * Cabeçalho
+ * Usando 'display: flex', os elementos filhos se posicionam lado-a-lado.
+ */
+header {
+    display: flex;
+    align-items: center;
+    padding: .1rem;
+    background-color: rgb(216, 23, 23);
+}
+/* Logotipo */
+header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+/* Título */
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+/* Slogan */
+header small {
+    display: block;
+    font-size: .95rem;
+    font-weight: normal;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    color: rgb(248, 28, 28);
+    font-size: .8rem;
+}
+
+/* Links (ícones) do rodapé */
+footer a {
+    color: white;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: .2s;
+}
+
+footer a:hover {
+    background:pink;
+    color: black;
+}
+
+/* Main */
+main {
+    display: flex;
+}
+
+/* Menu principal */
+main nav {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+/* Ítens do menu principal */
+main nav a {
+    /* Não permite a quebra da linha */
+    white-space: nowrap;
+    padding: .8rem;
+    background-color: blue;
+    margin: 0 3px 3px 3px;
+    color: black;
+    text-decoration: none;
+    /* Tempo do efeito visual */
+    transition: .3s;
+    border-radius: .5rem;
+}
+
+/* Ícones do menu */ 
+main nav a i {
+    font-size: 1.2rem;
+}
+
+/* Conserta borda do primeiro item do menu */
+main nav a:first-child {
+    margin-top: 3px;
+}
+
+/* Quando passar o mouse em cima */
+main nav a:hover {
+    background-color:green;
+    color: rgb(226, 226, 226);
+}
+
+/* Afasta ícone e label dos itens do menu */
+main nav span {
+    padding-left: .6rem;
+}
+
+/* Article */
+main article {
+    padding: 0 1rem;
+}
+
+.img-center small {
+    display: block;
+}
+
+.img-center {
+    display: table;
+    margin: auto;
+    text-align: center;
 }
